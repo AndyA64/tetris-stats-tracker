@@ -1,7 +1,10 @@
 # Tetris Stats Tracker
 
+**Live demo:** https://andya64.github.io/tetris-stats-tracker/
+
+![Tetris Stats Tracker screenshot](screenshot.png)
+
 A small, dependency-free web app for logging Classic Tetris games and tracking progress over time.
-Built by Andrew Artiaga.
 
 ## Features
 - Log a game: date, score, lines, start level, and (optionally) tetrises
