@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tetris Stats Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Tetris Stats Tracker</h1>
+  <p class="dim">Log your Classic Tetris games. Everything is saved in your browser only.</p>
+
+  <section class="stats" id="summary" aria-live="polite"></section>
+
+  <section>
+    <h2>Score over time</h2>
+    <div id="chart"></div>
+  </section>
+
+  <section>
+    <h2>Log a game</h2>
+    <form id="form" novalidate>
+      <label>Date <input name="date" type="date" required></label>
+      <label>Score <input name="score" type="number" inputmode="numeric" min="0" required></label>
+      <label>Lines <input name="lines" type="number" inputmode="numeric" min="0" required></label>
+      <label>Start level <input name="startLevel" type="number" inputmode="numeric" min="0" max="29" placeholder="0"></label>
+      <label>Tetrises <input name="tetrises" type="number" inputmode="numeric" min="0" placeholder="optional"></label>
+      <button type="submit">Add game</button>
+    </form>
+    <p id="error" role="alert"></p>
+  </section>
+
+  <section>
+    <h2>History</h2>
+    <div class="actions">
+      <button id="export" type="button">Export JSON</button>
+      <label class="button">Import JSON <input id="import" type="file" accept="application/json" hidden></label>
+      <button id="clear" type="button" class="danger">Clear all</button>
+    </div>
+    <div class="table-wrap"><table id="history"></table></div>
+  </section>
+</main>
+<script src="stats.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

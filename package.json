@@ -1,0 +1,7 @@
+{
+  "name": "tetris-stats-tracker",
+  "version": "1.0.0",
+  "description": "Log Classic Tetris games and track score, lines, and tetris rate over time.",
+  "scripts": { "test": "node --test" },
+  "license": "MIT"
+}
